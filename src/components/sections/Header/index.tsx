@@ -1,12 +1,12 @@
-import { Hero } from "../Hero";
-import { Navbar } from "../Navbar";
+import { Hero } from "../../Hero";
+import { Navbar } from "../../Navbar";
 import './styles.css';
 
-import scrollIcon from '../../assets/icons/arrow-next-setion.svg';
-import shieldPlus from '../../assets/icons/shield-plus.svg'
-import shieldVerified from '../../assets/icons/shield-verified.svg';
-import clockIcon from '../../assets/icons/clock.svg';
-import { RectangleIcon } from '../RectangleIcon';
+import scrollIcon from '../../../assets/icons/arrow-next-setion.svg';
+import shieldPlus from '../../../assets/icons/shield-plus.svg'
+import shieldVerified from '../../../assets/icons/shield-verified.svg';
+import clockIcon from '../../../assets/icons/clock.svg';
+import { RectangleIcon } from '../../RectangleIcon';
 
 
 export function Header() {

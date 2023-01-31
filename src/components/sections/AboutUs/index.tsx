@@ -1,6 +1,6 @@
-import { FilledButton } from "../FilledButton";
+import { FilledButton } from "../../FilledButton";
 
-import aboutUsImage from '../../assets/images/about-us-image.png';
+import aboutUsImage from '../../../assets/images/about-us-image.png';
 
 export function AboutUs() {
   return (
@@ -8,7 +8,7 @@ export function AboutUs() {
       <div className="font-medium">
       <p className="text-[#BC9832] text-xl mb-1">TradeMais</p>
       <h1 className="text-5xl mb-8">Quem somos nós</h1>
-      <div className="text-lg max-w-4xl mb-36">
+      <div className="max-w-4xl mb-36 text-xl">
       <p className="mb-8">
         Temos orgulho de oferecer o serviço de intermediação de compra e venda de skins de excelente qualidade. Nossa equipe trabalha duro para garantir a sua segurança na hora de comprar aquele inventário dos sonhos!
         </p>
