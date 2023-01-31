@@ -2,14 +2,14 @@ import { ClientCard } from "../../ClientCard";
 import "./styles.css";
 
 import footerLine from "../../../assets/images/footer-line.svg";
-import logo from "../../../../public/logo-trade-mais.png";
+import logo from "/logo-trade-mais.png";
 import { Social } from "../../Social";
 import { Contacts } from "../../Contacts";
 
-import person1 from "../../../../public/person-1.jpg";
-import person2 from "../../../../public/person-2.jpg";
-import person3 from "../../../../public/person-3.jpg";
-import person4 from "../../../../public/person-4.jpg";
+import person1 from "/person-1.jpg";
+import person2 from "/person-2.jpg";
+import person3 from "/person-3.jpg";
+import person4 from "/person-4.jpg";
 
 const clientModel = [
   {

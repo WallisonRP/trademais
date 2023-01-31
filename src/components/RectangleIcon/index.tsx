@@ -7,14 +7,16 @@ interface Props {
   title: string;
 }
 
-export function RectangleIcon({iconPath, title}: Props) {
+export function RectangleIcon({ iconPath, title }: Props) {
   return (
-    <div className="py-10 w-60 bg-[#E3E3E3] rounded-3xl grid place-items-center ml-16 shadow-rectangle">
-      <div className="w-24 h-24 rounded-full bg-[#BEA55F] grid place-items-center">
-      <img className="w-12" src={iconPath} alt="" />
-      </div>
-      
-      <p className="text-xl font-audiowide mt-6 text-black font-bold -tracking-tighter">{title}</p>
+    <div className=" bg-[#E3E3E3] rounded-3xl grid place-items-center ml-[2vw] shadow-rectangle py-8 px-10">
+      {/* <div className="w-24 h-24 rounded-full bg-[#BEA55F] grid place-items-center">
+      </div> */}
+      <img className="rounded-full w-24" src={iconPath} alt="" />
+
+      <p className="text-base font-audiowide mt-4 text-black font-bold">
+        {title}
+      </p>
     </div>
   );
 }
