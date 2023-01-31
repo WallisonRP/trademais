@@ -6,27 +6,30 @@ import logo from "../../../../public/logo-trade-mais.png";
 import { Social } from "../../Social";
 import { Contacts } from "../../Contacts";
 
-let urlBase = "../../../../public/";
+import person1 from "../../../../public/person-1.jpg";
+import person2 from "../../../../public/person-2.jpg";
+import person3 from "../../../../public/person-3.jpg";
+import person4 from "../../../../public/person-4.jpg";
 
 const clientModel = [
   {
     name: "Hector Bonilha",
-    profilePictureUrl: `${urlBase}1.jpg`,
+    profilePictureUrl: person1,
     content: "Ótimo serviço, rápido e eficiente!!",
   },
   {
     name: "Maria Luiza",
-    profilePictureUrl: `${urlBase}2.jpg`,
+    profilePictureUrl: person2,
     content: "Ótimo serviço, rápido e eficiente!!",
   },
   {
     name: "Larissa Santos",
-    profilePictureUrl: `${urlBase}3.jpg`,
+    profilePictureUrl: person3,
     content: "Ótimo serviço, rápido e eficiente!!",
   },
   {
     name: "Pedro Golçalves",
-    profilePictureUrl: `${urlBase}4.jpg`,
+    profilePictureUrl: person4,
     content: "Ótimo serviço, rápido e eficiente!!",
   },
 ];
