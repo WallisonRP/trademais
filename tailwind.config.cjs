@@ -5,6 +5,9 @@ module.exports = {
     "./src/**/*.{html,ts,tsx,js,jsx}"
   ],
   theme: {
+    minWidth: {
+      'card': '200px',
+    },
     fontFamily: {
       'roboto': ['Roboto', 'sans-serif'],
     },

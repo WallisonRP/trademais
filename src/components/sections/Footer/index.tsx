@@ -36,7 +36,7 @@ const clientModel = [
 
 export function Footer() {
   return (
-    <footer className="px-[10%] pb-7 bg-[#121214] text-white ">
+    <footer className="px-[10%] pb-7 bg-[#121214] text-white">
       <div className="flex justify-between font-medium">
         <span className="max-w-xl">
           <p className="text-[#BC9832] text-2xl mb-1">Depoimentos</p>

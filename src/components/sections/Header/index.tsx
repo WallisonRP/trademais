@@ -1,5 +1,5 @@
 import { Hero } from "../../Hero";
-import { Navbar } from "../../Navbar";
+// import { Navbar } from "../../Navbar";
 import "./styles.css";
 
 import scrollIcon from "../../../assets/icons/arrow-next-setion.svg";
@@ -7,11 +7,14 @@ import shieldPlus from "../../../assets/icons/shield-plus.png";
 import shieldVerified from "../../../assets/icons/shield-verified.png";
 import clockIcon from "../../../assets/icons/clock.png";
 import { RectangleIcon } from "../../RectangleIcon";
+import { NavbarTest } from "../../NavbarTest";
 
 export function Header() {
   return (
-    <header className="relative bg-[#121214] text-white pb-[25vh] px-[10%] bg-hero-pattern bg-cover bg-no-repeat bg-center">
-      <Navbar />
+    <header className="relative px-[8%] bg-[#121214] text-white pb-[25vh] bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      {/* <Navbar /> */}
+      <NavbarTest />
+      {/* <Example /> */}
       <Hero />
 
       <div className="custom-shape-divider-bottom">
@@ -29,7 +32,7 @@ export function Header() {
       </div>
 
       <img src={scrollIcon} className="absolute bottom-16" alt="" />
-      <div className="flex absolute right-[10vw] -bottom-12">
+      <div className="flex absolute right-[10vw] -bottom-12 w-auto">
         <RectangleIcon title="+ SEGURO" iconPath={shieldPlus} />
         <RectangleIcon title="+ RAPIDO" iconPath={clockIcon} />
         <RectangleIcon title="+ EFICIENTE" iconPath={shieldVerified} />

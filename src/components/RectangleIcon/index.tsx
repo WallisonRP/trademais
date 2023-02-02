@@ -9,7 +9,7 @@ interface Props {
 
 export function RectangleIcon({ iconPath, title }: Props) {
   return (
-    <div className=" bg-[#E3E3E3] rounded-3xl grid place-items-center ml-[2vw] shadow-rectangle py-8 px-10">
+    <div className=" bg-[#E3E3E3] rounded-3xl grid place-items-center ml-[2vw] shadow-rectangle py-8 px-10 min-w-card">
       {/* <div className="w-24 h-24 rounded-full bg-[#BEA55F] grid place-items-center">
       </div> */}
       <img className="rounded-full w-24" src={iconPath} alt="" />
