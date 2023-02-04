@@ -33,7 +33,7 @@ export function Navbar() {
       </div>
 
       <button>
-        <IconButton />
+        <IconButton buttonFixed={true} buttonTop={true} />
       </button>
     </nav>
   );
