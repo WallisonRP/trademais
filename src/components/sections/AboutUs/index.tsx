@@ -26,7 +26,7 @@ export function AboutUs() {
         <FilledButton title="ENTRE EM CONTATO" />
       </div>
 
-      <img className="h-[500px]" src={aboutUsImage} alt="" />
+      <img className="h-[500px] md:block hidden" src={aboutUsImage} alt="" />
     </section>
   );
 }

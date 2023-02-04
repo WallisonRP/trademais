@@ -48,7 +48,7 @@ export function NavbarTest() {
 
       <div className="">
         <div className="flex gap-3">
-          <IconButton />
+          <IconButton buttonFixed={true} buttonTop={true} />
 
           <button
             onClick={() => setOpen(!open)}
