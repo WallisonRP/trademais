@@ -36,18 +36,18 @@ const clientModel = [
 
 export function Footer() {
   return (
-    <footer className="px-[10%] pb-7 bg-[#121214] text-white">
-      <div className="flex justify-between font-medium">
-        <span className="max-w-xl">
-          <p className="text-[#BC9832] text-2xl mb-1">Depoimentos</p>
-          <h1 className="text-5xl mb-8">
-            A opinião de quem já utilizou nossos serviços
-          </h1>
+    <footer className="px-[10%] pt-32 pb-7 bg-[#121214] text-white relative">
+      <div className="">
+        <span className="flex justify-between items-center font-medium ">
+          <p className="text-[#BC9832] md:text-2xl text-lg">Depoimentos</p>
+          <p className="">Confira mais casos</p>
         </span>
-        <p>Confira mais casos</p>
+        <h1 className="md:text-5xl text-2xl md:text-left text-center mt-4 mb-8">
+          A opinião de quem já utilizou nossos serviços
+        </h1>
       </div>
 
-      <div className="flex justify-evenly pt-20 pb-32">
+      <div className=" justify-evenly pt-20 pb-32 md:flex hidden">
         <ClientCard
           name={clientModel[0].name}
           profilePictureUrl={clientModel[0].profilePictureUrl}
@@ -70,26 +70,44 @@ export function Footer() {
         />
       </div>
 
-      <img className="w-full" src={footerLine} alt="" />
+      {/* <img className="w-full h-32" src={footerLine} alt="" /> */}
 
-      <div className="py-16 flex justify-between">
-        <img className="w-60" src={logo} alt="" />
+      <svg
+        className="w-[100%]"
+        height="11"
+        viewBox="0 0 1415 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1 5.5C79.5 -0.5 158 -0.5 236.5 5.5C315 11.5 393.5 11.5 472 5.5C550.5 -0.5 629 -0.5 707.5 5.5C786 11.5 864.5 11.5 943 5.5C1021.5 -0.5 1100 -0.5 1178.5 5.5C1257 11.5 1335.5 11.5 1414 5.5"
+          stroke="#FFBD08"
+          stroke-width="5"
+        />
+      </svg>
+
+      <div className="grid md:grid-flow-col md:place-content-around place-items-center">
+        <img className="md:w-60 w-20 my-3" src={logo} alt="" />
         <Social />
-        <Contacts />
+        <div className="md:block hidden">
+          <Contacts />
+        </div>
       </div>
-      {/* <div className="custom-shape-divider-top-1675108744">
+
+      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
         <svg
+          className="relative block w-[350%] h-[158px]"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
         >
           <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            className="shape-fill"
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            className="fill-violet-300"
           ></path>
         </svg>
-      </div> */}
+      </div>
     </footer>
   );
 }
