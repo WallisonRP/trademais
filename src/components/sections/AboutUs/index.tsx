@@ -26,7 +26,7 @@ export function AboutUs() {
         </div>
 
         <div className="mx-auto">
-          <FilledButton title="ENTRE EM CONTATO" />
+          <FilledButton title="SAIBA MAIS" />
         </div>
       </div>
 

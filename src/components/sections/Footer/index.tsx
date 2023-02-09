@@ -34,6 +34,13 @@ const clientModel = [
   },
 ];
 
+const items = [
+  <div key={1}>Item 1</div>,
+  <div key={2}>Item 2</div>,
+  <div key={3}>Item 3</div>,
+  <div key={4}>Item 4</div>,
+];
+
 export function Footer() {
   return (
     <footer className="px-[10%] pt-32 pb-7 bg-[#121214] text-white relative">
@@ -42,7 +49,7 @@ export function Footer() {
           <p className="text-[#BC9832] md:text-2xl text-lg">Depoimentos</p>
           <p className="">Confira mais casos</p>
         </span>
-        <h1 className="md:text-5xl text-2xl md:text-left text-center mt-4 mb-8">
+        <h1 className="md:text-4xl text-xl md:text-left text-center mt-4 mb-8">
           A opinião de quem já utilizou nossos serviços
         </h1>
       </div>
@@ -70,10 +77,11 @@ export function Footer() {
         />
       </div>
 
+
       {/* <img className="w-full h-32" src={footerLine} alt="" /> */}
 
       <svg
-        className="w-[100%]"
+        className="w-[100%] md:mb-16"
         height="11"
         viewBox="0 0 1415 11"
         fill="none"
@@ -86,8 +94,9 @@ export function Footer() {
         />
       </svg>
 
-      <div className="grid md:grid-flow-col md:place-content-around place-items-center">
-        <img className="md:w-60 w-20 my-3" src={logo} alt="" />
+      {/* <div className="grid md:grid-flow-col lg:place-content-around md:place-items-start place-items-center"> */}
+      <div className="flex md:justify-around md:flex-row flex-col md:items-start items-center">
+        <img className="md:w-26 lg:w-40 w-20 my-3" src={logo} alt="" />
         <Social />
         <div className="md:block hidden">
           <Contacts />

@@ -1,5 +1,7 @@
+
+
 interface SocialIconProps {
-  icon: string;
+  icon: any;
   link: string;
   paddingX: number;
   paddingY: number;
@@ -15,10 +17,10 @@ export function SocialIcon({
 }: SocialIconProps) {
   return (
     <li
-      className={`bg-[#FFBD08] grid place-items-center py-4 px-${paddingX} rounded-full mr-5`}
+      className={`bg-[#FFBD08] grid place-items-center py-2 px-2 rounded-full`}
     >
       <a href={link}>
-        <img className={`md:w-${iconSize}`} src={icon} alt="" />
+        {icon}
       </a>
     </li>
   );
