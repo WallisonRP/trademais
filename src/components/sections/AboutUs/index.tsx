@@ -24,13 +24,12 @@ export function AboutUs() {
             clientes.
           </p>
         </div>
-
-        <div className="mx-auto">
+        
           <FilledButton title="SAIBA MAIS" />
-        </div>
+
       </div>
 
-      <img className="h-[500px] md:block hidden" src={aboutUsImage} alt="" />
+      <img className="lg:h-[450px] lg:block hidden" src={aboutUsImage} alt="" />
     </section>
   );
 }

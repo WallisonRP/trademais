@@ -1,20 +1,20 @@
 import "./styles.css";
+import howItWorksImage from "../../../assets/images/how-it-works.png";
+import { FilledButton } from "../../FilledButton";
 
 export function HowItWorks() {
   return (
-    <section className="relative bg-violet-300 px-[10%] pt-40 pb-24 font-medium mt-16">
-      <p className="text-[#BC9832] text-xl mb-1">TradeMais</p>
-      <h1 className="text-5xl mb-8">Quem somos nós</h1>
+    <section className="relative bg-gray-300 px-[10%] pt-40 pb-60 mt-16 font-medium">
+      <p className="text-[#BC9832] md:text-2xl text-lg mb-1">TradeMais</p>
+      <h1 className="md:text-4xl text-xl md:text-left text-center mb-8">Entenda como funciona todo o processo!</h1>
+      
+      <div className="flex flex-col justify-center mt-32 place-items-center">
+      <img className="max-w-full h-auto" src={howItWorksImage} alt="howItWorksImage" />
+      <div className="mt-32">
+          <FilledButton title="Entre em contato" />
+        </div>
+      </div>
 
-      <p>
-        Temos orgulho de oferecer o serviço de intermediação de compra e venda
-        de skins de excelente qualidade. Nossa equipe trabalha duro para
-        garantir a sua segurança na hora de comprar aquele inventário dos
-        sonhos! Nossa missão é garantir a satisfação e tranquilidade durante
-        todo o processo de compra e venda. Estamos sempre trabalhando para
-        melhorar a experiência, conforto e, principalmente, a segurança dos
-        nossos clientes.
-      </p>
 
       <div className="absolute top-0 left-0 w-full overflow-hidden">
         <svg
