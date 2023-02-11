@@ -1,5 +1,5 @@
 import logo from "../../../public/logo-trade-mais.png";
-import { IconButton } from "../IconButton/indes";
+import { IconButton } from "../IconButton";
 
 export function Navbar() {
   return (

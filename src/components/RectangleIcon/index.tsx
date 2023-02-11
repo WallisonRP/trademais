@@ -9,12 +9,12 @@ interface Props {
 
 export function RectangleIcon({ iconPath, title }: Props) {
   return (
-    <div className=" bg-[#E3E3E3] hidden rounded-3xl md:grid place-items-center ml-[2vw] shadow-rectangle py-8 px-10 min-w-card">
+    <div className=" bg-[#E3E3E3] rounded-3xl grid place-items-center ml-[2vw] shadow-rectangle xl:py-8 xl:px-10 py-6 px-8">
       {/* <div className="w-24 h-24 rounded-full bg-[#BEA55F] grid place-items-center">
       </div> */}
-      <img className="rounded-full w-24" src={iconPath} alt="" />
-
-      <p className="text-base font-audiowide mt-4 text-black font-bold">
+      <img className="rounded-full xl:w-24 w-16" src={iconPath} alt="" />
+      
+      <p className="xl:text-base text-sm font-audiowide mt-4 text-black font-bold">
         {title}
       </p>
     </div>

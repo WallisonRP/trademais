@@ -1,17 +1,19 @@
 import "./styles.css";
 import howItWorksImage from "../../../assets/images/how-it-works1.png";
 import howItWorksImage1 from "../../../assets/images/Group-86.png";
+import howItWorksImage2 from "../../../assets/images/Group-87.png";
 import { FilledButton } from "../../FilledButton";
 
 export function HowItWorks() {
   return (
-    <section className="relative bg-[#F6F6F6] px-[10%] pt-40 pb-10 mt-16 font-medium">
+    <section className="relative bg-[#F6F6F6] md:px-[8%] px-[3%] pt-40 pb-10 mt-16 font-medium">
       <p className="text-[#BC9832] md:text-2xl text-lg mb-1">TradeMais</p>
-      <h1 className="md:text-4xl text-xl md:text-left text-center mb-8">Entenda como funciona todo o processo!</h1>
+      <h1 className="md:text-4xl text-2xl md:text-left text-center mb-8">Entenda como funciona todo o processo!</h1>
       
-      <div className="flex flex-col justify-center mt-32 place-items-center">
-      <img className="max-w-full h-auto" src={howItWorksImage1} alt="howItWorksImage" />
-      <div className="mt-36">
+      <div className="flex flex-col justify-center place-items-center">
+      <img className="max-w-full h-auto md:block hidden mt-32" src={howItWorksImage1} alt="howItWorksImage" />
+      <img className="max-w-full h-auto md:hidden block" src={howItWorksImage2} alt="howItWorksImage" />
+      <div className="md:mt-36 mt-16">
           <FilledButton title="Entre em contato" />
         </div>
       </div>

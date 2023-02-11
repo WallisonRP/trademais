@@ -4,7 +4,7 @@ import aboutUsImage from "../../../assets/images/about-us-image.png";
 
 export function AboutUs() {
   return (
-    <section className="md:mt-72 mt-24 flex md:px-[10%] px-[3%] justify-between">
+    <section className="md:mt-72 mt-24 flex md:px-[8%] px-[3%] justify-between">
       <div>
         <p className="text-[#BC9832] text-xl mb-1 font-medium">TradeMais</p>
         <h1 className="md:text-5xl text-3xl font-bold md:mb-8 mb-3">

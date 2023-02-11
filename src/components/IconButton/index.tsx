@@ -3,13 +3,14 @@ import whatsappIcon from "../../assets/icons/whatsapp-icon.svg";
 interface IconButtonProps {
   buttonFixed: boolean;
   buttonTop: boolean;
+  marginRight: number;
 }
 
-export function IconButton({ buttonFixed, buttonTop }: IconButtonProps) {
+export function IconButton({ buttonFixed, buttonTop, marginRight}: IconButtonProps) {
   return (
     <button
       className={`md:py-2 md:px-3 px-3 py-3 md:flex bg-[#FFBD08] text-black rounded-3xl font-audiowide text-xl md:static ${
-        buttonFixed ? "fixed bottom-[10vh] z-10" : ""
+        buttonFixed ? "fixed bottom-[4vh] z-10 right-4" : ""
       } `}
     >
       <span

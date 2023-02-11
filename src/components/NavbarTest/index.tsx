@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IconButton } from "../IconButton/indes";
+import { IconButton } from "../IconButton";
 import logo from "/logo-trade-mais.png";
 import { Menu, Close } from "react-ionicons";
 
@@ -14,7 +14,7 @@ export function NavbarTest() {
   let [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-transparent px-2 sm:px-4 pt-7 dark:bg-transparent flex justify-between items-center w-full flex-wrap">
+    <nav className="bg-transparent pt-7 dark:bg-transparent flex justify-between items-center w-full flex-wrap">
       <a href="">
         <img src={logo} className="lg:w-20 md:w-16 w-20" alt="logo" />
       </a>
@@ -48,7 +48,7 @@ export function NavbarTest() {
 
       <div className="">
         <div className="flex gap-3">
-          <IconButton buttonFixed={true} buttonTop={true} />
+          <IconButton buttonFixed={true} buttonTop={true} marginRight={40} />
 
           <button
             onClick={() => setOpen(!open)}

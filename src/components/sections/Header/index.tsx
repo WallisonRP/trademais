@@ -8,10 +8,11 @@ import shieldVerified from "../../../assets/icons/shield-verified.png";
 import clockIcon from "../../../assets/icons/clock.png";
 import { RectangleIcon } from "../../RectangleIcon";
 import { NavbarTest } from "../../NavbarTest";
+import { HeroCarousel } from "../../HeroCarousel";
 
 export function Header() {
   return (
-    <header className="relative px-[8%] bg-[#121214] text-white pb-[20vh] bg-hero-pattern bg-cover bg-no-repeat bg-center">
+    <header className="relative md:px-[8%] px-[3%] bg-[#121214] text-white pb-[20vh] bg-hero-pattern bg-cover bg-no-repeat bg-center">
       {/* <Navbar /> */}
       <NavbarTest />
       {/* <Example /> */}
@@ -47,14 +48,19 @@ export function Header() {
 
       <img
         src={scrollIcon}
-        className="absolute bottom-[12vh] md:w-6 w-5"
+        className="absolute sm:block hidden bottom-[8vh] md:w-6 w-5"
         alt=""
       />
 
-      <div className="flex absolute right-[10vw] -bottom-12 w-auto">
+      <div className="md:flex hidden absolute lg:right-[10vw] md:right-[4vw] -bottom-12 w-auto">
         <RectangleIcon title="+ SEGURO" iconPath={shieldPlus} />
         <RectangleIcon title="+ RAPIDO" iconPath={clockIcon} />
         <RectangleIcon title="+ EFICIENTE" iconPath={shieldVerified} />
+      </div>
+
+      <p className="sm:hidden font-bold text-3xl text-[#BC9832] text-center mt-28 mb-8">Diferenciais</p>
+      <div className="sm:hidden flex justify-center">
+        <HeroCarousel />
       </div>
     </header>
   );

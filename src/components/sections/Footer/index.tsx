@@ -6,44 +6,44 @@ import logo from "/logo-trade-mais.png";
 import { Social } from "../../Social";
 import { Contacts } from "../../Contacts";
 
+
+import { FooterCarousel } from "../../FooterCarousel";
+
+
 import person1 from "/person-1.jpg";
 import person2 from "/person-2.jpg";
 import person3 from "/person-3.jpg";
 import person4 from "/person-4.jpg";
 
 const clientModel = [
-  {
-    name: "Hector Bonilha",
-    profilePictureUrl: person1,
-    content: "Ótimo serviço, rápido e eficiente!!",
-  },
-  {
-    name: "Maria Luiza",
-    profilePictureUrl: person2,
-    content: "Ótimo serviço, rápido e eficiente!!",
-  },
-  {
-    name: "Larissa Santos",
-    profilePictureUrl: person3,
-    content: "Ótimo serviço, rápido e eficiente!!",
-  },
-  {
-    name: "Pedro Golçalves",
-    profilePictureUrl: person4,
-    content: "Ótimo serviço, rápido e eficiente!!",
-  },
-];
+    {
+      name: "Hector Bonilha",
+      profilePictureUrl: person1,
+      content: "Ótimo serviço, rápido e eficiente!!",
+    },
+    {
+      name: "Maria Luiza",
+      profilePictureUrl: person2,
+      content: "Ótimo serviço, rápido e eficiente!!",
+    },
+    {
+      name: "Larissa Santos",
+      profilePictureUrl: person3,
+      content: "Ótimo serviço, rápido e eficiente!!",
+    },
+    {
+      name: "Pedro Golçalves",
+      profilePictureUrl: person4,
+      content: "Ótimo serviço, rápido e eficiente!!",
+    },
+  ];
 
-const items = [
-  <div key={1}>Item 1</div>,
-  <div key={2}>Item 2</div>,
-  <div key={3}>Item 3</div>,
-  <div key={4}>Item 4</div>,
-];
+
+
 
 export function Footer() {
   return (
-    <footer className="px-[10%] pt-32 pb-7 bg-[#121214] text-white relative">
+    <footer className="md:px-[8%] px-[3%] pt-32 pb-7 bg-[#121214] text-white relative">
       <div className="">
         <span className="flex justify-between items-center font-medium ">
           <p className="text-[#BC9832] md:text-2xl text-lg">Depoimentos</p>
@@ -54,6 +54,10 @@ export function Footer() {
         </h1>
       </div>
 
+      {/* <div className="w-[92%] felx justify-center">
+      <FooterCarousel />
+
+      </div> */}
       <div className=" justify-evenly pt-20 pb-32 md:flex hidden">
         <ClientCard
           name={clientModel[0].name}
