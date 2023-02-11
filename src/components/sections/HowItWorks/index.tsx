@@ -1,16 +1,17 @@
 import "./styles.css";
-import howItWorksImage from "../../../assets/images/how-it-works.png";
+import howItWorksImage from "../../../assets/images/how-it-works1.png";
+import howItWorksImage1 from "../../../assets/images/Group-86.png";
 import { FilledButton } from "../../FilledButton";
 
 export function HowItWorks() {
   return (
-    <section className="relative bg-gray-300 px-[10%] pt-40 pb-60 mt-16 font-medium">
+    <section className="relative bg-[#F6F6F6] px-[10%] pt-40 pb-10 mt-16 font-medium">
       <p className="text-[#BC9832] md:text-2xl text-lg mb-1">TradeMais</p>
       <h1 className="md:text-4xl text-xl md:text-left text-center mb-8">Entenda como funciona todo o processo!</h1>
       
       <div className="flex flex-col justify-center mt-32 place-items-center">
-      <img className="max-w-full h-auto" src={howItWorksImage} alt="howItWorksImage" />
-      <div className="mt-32">
+      <img className="max-w-full h-auto" src={howItWorksImage1} alt="howItWorksImage" />
+      <div className="mt-36">
           <FilledButton title="Entre em contato" />
         </div>
       </div>
