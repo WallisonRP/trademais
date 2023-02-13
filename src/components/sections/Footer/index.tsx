@@ -6,9 +6,7 @@ import logo from "/logo-trade-mais.png";
 import { Social } from "../../Social";
 import { Contacts } from "../../Contacts";
 
-
 import { FooterCarousel } from "../../FooterCarousel";
-
 
 import person1 from "/person-1.jpg";
 import person2 from "/person-2.jpg";
@@ -16,30 +14,27 @@ import person3 from "/person-3.jpg";
 import person4 from "/person-4.jpg";
 
 const clientModel = [
-    {
-      name: "Hector Bonilha",
-      profilePictureUrl: person1,
-      content: "Ótimo serviço, rápido e eficiente!!",
-    },
-    {
-      name: "Maria Luiza",
-      profilePictureUrl: person2,
-      content: "Ótimo serviço, rápido e eficiente!!",
-    },
-    {
-      name: "Larissa Santos",
-      profilePictureUrl: person3,
-      content: "Ótimo serviço, rápido e eficiente!!",
-    },
-    {
-      name: "Pedro Golçalves",
-      profilePictureUrl: person4,
-      content: "Ótimo serviço, rápido e eficiente!!",
-    },
-  ];
-
-
-
+  {
+    name: "Hector Bonilha",
+    profilePictureUrl: person1,
+    content: "Ótimo serviço, rápido e eficiente!!",
+  },
+  {
+    name: "Maria Luiza",
+    profilePictureUrl: person2,
+    content: "Ótimo serviço, rápido e eficiente!!",
+  },
+  {
+    name: "Larissa Santos",
+    profilePictureUrl: person3,
+    content: "Ótimo serviço, rápido e eficiente!!",
+  },
+  {
+    name: "Pedro Golçalves",
+    profilePictureUrl: person4,
+    content: "Ótimo serviço, rápido e eficiente!!",
+  },
+];
 
 export function Footer() {
   return (
@@ -54,11 +49,10 @@ export function Footer() {
         </h1>
       </div>
 
-      {/* <div className="w-[92%] felx justify-center">
-      <FooterCarousel />
-
-      </div> */}
-      <div className=" justify-evenly pt-20 pb-32 md:flex hidden">
+      <div className="my-16">
+        <FooterCarousel />
+      </div>
+      {/* <div className=" justify-evenly pt-20 pb-32 md:flex hidden">
         <ClientCard
           name={clientModel[0].name}
           profilePictureUrl={clientModel[0].profilePictureUrl}
@@ -79,8 +73,7 @@ export function Footer() {
           profilePictureUrl={clientModel[3].profilePictureUrl}
           content={clientModel[3].content}
         />
-      </div>
-
+      </div> */}
 
       {/* <img className="w-full h-32" src={footerLine} alt="" /> */}
 
