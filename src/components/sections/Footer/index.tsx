@@ -6,12 +6,11 @@ import logo from "/logo-trade-mais.png";
 import { Social } from "../../Social";
 import { Contacts } from "../../Contacts";
 
-import { FooterCarousel } from "../../FooterCarousel";
-
 import person1 from "/person-1.jpg";
 import person2 from "/person-2.jpg";
 import person3 from "/person-3.jpg";
 import person4 from "/person-4.jpg";
+import FooterCarousel from "../../FooterCarousel";
 
 const clientModel = [
   {
@@ -49,9 +48,8 @@ export function Footer() {
         </h1>
       </div>
 
-      <div className="my-16">
-        <FooterCarousel />
-      </div>
+      <FooterCarousel />
+      <div className="mb-16">{/* <FooterCarousel /> */}</div>
       {/* <div className=" justify-evenly pt-20 pb-32 md:flex hidden">
         <ClientCard
           name={clientModel[0].name}

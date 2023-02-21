@@ -1,0 +1,16 @@
+.slick-dots li button {
+  color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+.slick-dots li button:before {
+  color: #fff;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: center;
+}
